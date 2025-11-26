@@ -9,9 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body><nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url_for('home') }}">ToDo </a>
+            <a class="navbar-brand" href="{{ url_for('home') }}">ToDo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,45 +27,49 @@
             </div>
         </div>
     </nav>
-    <!-- About Section -->
+
+    <!-- ABOUT SECTION -->
     <section class="py-5 bg-light text-center">
         <div class="container">
             <h1 class="display-4 fw-bold">About Us</h1>
-            <p class="lead">We are a passionate team dedicated to providing the best services and products to our
-                customers.</p>
+            <p class="lead">We are a passionate team dedicated to providing the best services and products to our customers.</p>
         </div>
     </section>
 
-    <!-- Team Section -->
+    <!-- TEAM SECTION -->
     <section class="container py-5">
         <div class="row text-center">
+
             <div class="col-md-4" style="height: 5cm;">
-                <img src="{{ url_for('static', filename='aniket_original.png') }}"   
-                alt="Team Member" 
-                style=" height: 5cm; object-fit: cover;border-radius: 5%;">
-                <h4>Aniket</h4>
+                <img src="{{ url_for('static', filename='aniket_original.png') }}" 
+                alt="Aniket" 
+                style="height: 5cm; object-fit: cover; border-radius: 8%;">
+                <h4 class="mt-2">Aniket</h4>
                 <p>Founder & CEO</p>
             </div>
+
             <div class="col-md-4">
-                <img src="{{ url_for('static', filename='ElonMusk.png') }}"   
-                alt="Team Member" 
-                style=" height: 5cm; object-fit: cover;border-radius: 5%;">
-                <h4>Elon Musk</h4>
+                <img src="{{ url_for('static', filename='ElonMusk.png') }}" 
+                alt="Elon Musk" 
+                style="height: 5cm; object-fit: cover; border-radius: 8%;">
+                <h4 class="mt-2">Elon Musk</h4>
                 <p>CTO</p>
             </div>
+
             <div class="col-md-4">
-                <img src="{{ url_for('static', filename='LarryFink.png') }}"   
-                alt="Team Member" 
-                style=" height: 5cm; object-fit: cover;border-radius: 5%;">                <h4>Larry Fink</h4>
+                <img src="{{ url_for('static', filename='LarryFink.png') }}" 
+                alt="Larry Fink" 
+                style="height: 5cm; object-fit: cover; border-radius: 8%;">
+                <h4 class="mt-2">Larry Fink</h4>
                 <p>PA</p>
             </div>
+
         </div>
-        <br>
-        <br>
-        <br>
+
+        <br><br><br>
     </section>
 
-    <!-- Contact Section -->
+    <!-- CONTACT -->
     <section class="bg-dark text-white text-center py-5">
         <div class="container">
             <h2>Contact Us</h2>
@@ -70,8 +77,5 @@
         </div>
     </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
