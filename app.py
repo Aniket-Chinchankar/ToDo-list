@@ -62,6 +62,7 @@ def about():
     return render_template('about.html')
 
 if __name__ == "__main__":
+    from flask_sqlalchemy import SQLAlchemy
     with app.app_context():
         db.create_all()
     app.run(debug=True)
